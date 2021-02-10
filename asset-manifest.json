@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/sachiko0811/calendar-app/static/css/main.537b539f.chunk.css",
+    "main.js": "/sachiko0811/calendar-app/static/js/main.3e587825.chunk.js",
+    "main.js.map": "/sachiko0811/calendar-app/static/js/main.3e587825.chunk.js.map",
+    "runtime-main.js": "/sachiko0811/calendar-app/static/js/runtime-main.9b8bd791.js",
+    "runtime-main.js.map": "/sachiko0811/calendar-app/static/js/runtime-main.9b8bd791.js.map",
+    "static/js/2.48fac89c.chunk.js": "/sachiko0811/calendar-app/static/js/2.48fac89c.chunk.js",
+    "static/js/2.48fac89c.chunk.js.map": "/sachiko0811/calendar-app/static/js/2.48fac89c.chunk.js.map",
+    "index.html": "/sachiko0811/calendar-app/index.html",
+    "static/css/main.537b539f.chunk.css.map": "/sachiko0811/calendar-app/static/css/main.537b539f.chunk.css.map",
+    "static/js/2.48fac89c.chunk.js.LICENSE.txt": "/sachiko0811/calendar-app/static/js/2.48fac89c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9b8bd791.js",
+    "static/js/2.48fac89c.chunk.js",
+    "static/css/main.537b539f.chunk.css",
+    "static/js/main.3e587825.chunk.js"
+  ]
+}
