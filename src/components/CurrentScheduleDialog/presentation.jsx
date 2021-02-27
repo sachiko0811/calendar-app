@@ -11,7 +11,9 @@ import {
 
 import { Close, LocationOnOutlined, NotesOutlined, DeleteOutlineOutlined } from "@material-ui/icons";
 
-import styles from "./style.css";
+// import styles from "./style.css";
+import "./style.css";
+
 const spacer = (top, bottom) => ({
     margin: `${top}px 0 ${bottom}px 0`
 });
@@ -29,7 +31,10 @@ const CurrentScheduleDialog = ({
         fullWidth
         >
             <DialogActions>
-                <div className={styles.closeButton}>
+                <div 
+                // className={styles.closeButton}
+                className="closeButton"
+                >
                     <Tooltip title="Delete" placement="bottom">
                         <IconButton onClick={deleteItem}  size="small">
                             <DeleteOutlineOutlined />
@@ -55,7 +60,10 @@ const CurrentScheduleDialog = ({
                         style={spacer(0, 30)}
                         >
                             <Grid item>
-                                <span className={styles.box}></span>
+                                <span 
+                                // className={styles.box}
+                                className="box"
+                                ></span>
                             </Grid>
                             <Grid item xs={10}>
                                 <Typography variant="h5" component="h2">

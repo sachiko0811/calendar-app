@@ -16,7 +16,8 @@ import { LocationOnOutlined, NotesOutlined, AccessTime, Close } from "@material-
 import { DatePicker } from "@material-ui/pickers";
 import { withStyles } from "@material-ui/styles";
 
-import * as styles from './style.css';
+// import * as styles from './style.css';
+import "./style.css";
 
 const spacer = { margin: "4px 0" };
 
@@ -48,9 +49,13 @@ const AddScheduleDialog = ({
         fullWidth
         >
             <DialogActions>
-                <div className={styles.closeButton}>
+                <div 
+                // className={styles.closeButton}
+                className="closeButton"
+                >
                     <Tooltip>
-                        <IconButton onClick={closeDialog} size="small">
+                        <IconButton 
+                        onClick={closeDialog} size="small">
                             <Close />
                         </IconButton>
                     </Tooltip>
@@ -67,7 +72,10 @@ const AddScheduleDialog = ({
                 onBlur={setIsEditStart}
                 error={isTitleInvalid}
                 />
-                <div className={styles.validation}>
+                <div 
+                // className={styles.validation}
+                className="validation"
+                >
                     {isTitleInvalid && (
                         <Typography variant="caption" component="div" color="error">
                             You need to fill the title

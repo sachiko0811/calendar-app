@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { GridList, Typography } from "@material-ui/core";
+// import { Typography } from "@material-ui/core";
 
 import CalendarElement from "../CalendarElements";
 // import { createCalendar } from "../../services/calendar";
@@ -8,7 +9,9 @@ import CalendarElement from "../CalendarElements";
 // import "dayjs/locale/ja";
 // dayjs.locale("ja");
 
-import * as styles from "./style.css";
+// import * as styles from "./style.css";
+// import styles from "./style.css";
+import './style.css';
 
 // const calendar = createCalendar();
 
@@ -28,13 +31,32 @@ const CalendarBoard = ({
     // console.log(calendar);
     // console.log(schedules);
     return (
-        <div className={styles.container}>
+        <div 
+        // className={styles.container}
+        className="container"
+        >
             <GridList 
-            className={styles.grid}
+            // className={styles.grid}
+            // style={{borderLeft: "1px solid #ccc", color: "red"}}
+            className="grid"
             cols={7}
             spacing={0}
             cellHeight="auto"
             >
+                {days.map(d => (
+                    <li key={d}>
+                        <Typography
+                        // className={styles.days}
+                        className="days"
+                        color="textSecondary"
+                        align="center"
+                        variant="caption"
+                        component="div"
+                        >
+                            {d}
+                        </Typography>
+                    </li>
+                ))}
                 {calendar.map(({ date, schedules }) => (
                     <li 
                     key={date.toISOString()}

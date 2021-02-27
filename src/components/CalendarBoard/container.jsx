@@ -23,7 +23,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
     openAddScheduleDialog: d => {
-        dispatch(addScheduleOpenDialog(true));
+        dispatch(addScheduleOpenDialog());
         dispatch(addScheduleSetValue({ date: d }));
     },
 

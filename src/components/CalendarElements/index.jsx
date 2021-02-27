@@ -1,6 +1,7 @@
 import React from "react";
 
-import * as styles from "./style.css";
+// import * as styles from "./style.css";
+import './style.css';
 
 import Schedule from '../Schedule';
 
@@ -33,19 +34,26 @@ const CalendarElement = ({ day, month, schedules, ...props }) => {
     const isToday = isSameDay(day, today);
 
     return(
-        <div className={styles.element}>
+        <div 
+        // className={styles.element}
+        className="element"
+        >
             <Typography 
-            className={styles.date}
+            // className={styles.date}
+            className="date"
             color={textColor}
             align="center"
             variant="caption"
             component="div"
             >
-                <span className={isToday ? styles.today : ""}>
+                <span className={isToday ? "today" : ""}>
                     {day.format(format)}
                 </span>
             </Typography>
-            <div className={styles.schedules}>
+            <div 
+            // className={styles.schedules}
+            className="schedules"
+            >
                 {schedules.map(e =>  (
                     <Schedule key={e.id} schedule={e} {...props} />
                 ))}
